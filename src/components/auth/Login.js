@@ -1,6 +1,6 @@
 import React from 'react';
-import axios from 'axios';
 import {httpRequest} from '../../js/AxiosWrapper';
+
 
 export class Login extends React.Component {
 
