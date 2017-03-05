@@ -2,9 +2,10 @@ var webpack = require("webpack");
 var path = require("path");
 var fs = require("fs");
 
+
 var ops = {
     cert: "./ssl/www.alex.store.ru.x509.public",
-    cacert: "./ssl/cacert.pem",
+    // cacert: "./ssl/cacert.pem",
     key: "./ssl/www.alex.store.ru.key.pem"
 };
 
@@ -50,7 +51,7 @@ var config = {
         },
         https: {
             cert: fs.readFileSync(ops.cert),
-            ca: fs.readFileSync(ops.cacert),
+            // ca: fs.readFileSync(ops.cacert),
             key: fs.readFileSync(ops.key),
             ciphers: "DEFAULT",
             secureProtocol: "TLSv1_2_method"

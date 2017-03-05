@@ -1,4 +1,3 @@
-import {getBaseHttpUrl} from './proxy';
 import {getBaseHttpsUrl} from './proxy';
 import axios from 'axios';
 
