@@ -36,6 +36,8 @@ var config = {
         inline: true,
         historyApiFallback: true,
         publicPath: "/app/",
+        host: "www.alex.store.ru",
+        port: 8080,
         proxy: {
             "/store/token": {
                 target: {
@@ -48,7 +50,7 @@ var config = {
         },
         https: {
             cert: fs.readFileSync(ops.cert),
-            //ca: fs.readFileSync(ops.cacert),
+            ca: fs.readFileSync(ops.cacert),
             key: fs.readFileSync(ops.key),
             ciphers: "DEFAULT",
             secureProtocol: "TLSv1_2_method"
