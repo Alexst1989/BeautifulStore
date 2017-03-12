@@ -4,7 +4,7 @@
   "description": "Учебный проект магазин",
   "main": "index.js",
   "scripts": {
-    "windev": "webpack -d && COPY /Y \"src\\index.html\" \"build\\index.html\" && webpack-dev-server",
+    "windev": "webpack -d && COPY /Y \"src\\index.html\" \"build\\index.html\" && webpack-dev-server"
   },
   "keywords": [],
   "author": "stepanov-av",

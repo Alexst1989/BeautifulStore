@@ -40,7 +40,7 @@ var config = {
         host: "www.alex.store.ru",
         port: 8080,
         proxy: {
-            "/store/token": {
+            "/store/**": {
                 target: {
                     host: "www.alex.store.ru",
                     protocol: 'http:',
